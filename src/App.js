@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import Play from "./component/Video";
+import "./App.css"
 
 function App() {
+   let obj={
+    title:"React js", views:"1000",  Channel:"Hotstar", time:"1 years ago"
+   }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+     <div className="App">
+     <Play{...obj} ></Play>
+     <div>
+     <Play title="Mongodb"  views="5000" Channel="amazon" time="4 years ago"></Play>
+     </div>
+     </div>
+     </>
+   
   );
 }
-
 export default App;

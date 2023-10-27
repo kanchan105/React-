@@ -1,0 +1,14 @@
+button{
+  background-color: black;
+  border: ipx solid yellow;
+  padding: 1em;
+  border-radius: 1 em;
+  color:white;
+  cursor:pointer;
+
+}
+
+button:hover{
+  background-color:white;
+  color:black;
+}

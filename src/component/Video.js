@@ -1,6 +1,6 @@
 import "./Video.css";
 
-function Play({ title, views, channel, time, verified,type }) {
+function Play({ title, views, channel, time, verified,type,children }) {
   return (
     <>
       <div className="container">
@@ -20,6 +20,10 @@ function Play({ title, views, channel, time, verified,type }) {
 
           <div className="views">
             {views} views <span>.</span> {time}
+          </div>
+          
+          <div>
+            {children}
           </div>
         </div>
       </div>
